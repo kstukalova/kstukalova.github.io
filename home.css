@@ -4,7 +4,7 @@ body {
 	overflow: hidden;
 }
 
-#test {
+#background {
 	height: 100%;
 	width: 100%;
 	background-image: url(images/DSC_0995.jpg); 
@@ -14,4 +14,8 @@ body {
 	background-size: cover;
 	overflow: hidden;
 	position: absolute;
+}
+
+#nav {
+	margin: 100px;
 }

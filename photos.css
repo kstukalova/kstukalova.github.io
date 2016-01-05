@@ -5,7 +5,6 @@ body {
 #background {
 	height: 100%;
 	width: 100%;
-	background-image: url(images/photos_bkgrnd.jpg); 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

@@ -26,6 +26,11 @@ body {
 	margin-right: auto;
 }
 
+#name {
+	font-variant: small-caps;
+	font-family: serif;
+}
+
 @media screen and (min-width: 992px) {
 	#nav {
 		margin: 85px;

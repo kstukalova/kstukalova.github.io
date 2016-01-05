@@ -22,6 +22,8 @@ body {
 	background: #D5D5D5;
 	padding: 15px;
 	max-width: 80px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media screen and (min-width: 992px) {

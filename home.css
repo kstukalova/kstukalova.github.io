@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 
-ul {
+#nav {
 	list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,11 +14,11 @@ ul {
     background-color: #D5D5D5;
 }
 
-li {
+#nav li {
     float: left;
 }
 
-li a {
+#nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -26,6 +26,6 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+#nav li a:hover:not(.active) {
     background-color: #111;
 }

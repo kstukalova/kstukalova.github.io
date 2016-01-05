@@ -22,7 +22,7 @@ body {
 	text-align: center;
 	background: #D5D5D5;
 	padding: 15px;
-	max-width: 200px;
+	max-width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -58,7 +58,7 @@ body {
 }
 
 #nav .row .col-md-2 {
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 @media screen and (min-width: 992px) {

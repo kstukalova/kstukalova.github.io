@@ -7,7 +7,7 @@ body {
 #background {
 	height: 100%;
 	width: 100%;
-	background-image: url(images/DSC_0995.jpg); 
+	background-image: url(images/DSC_0995_small.jpg); 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -31,5 +31,8 @@ body {
 		margin: 85px;
 		text-align: left;
 		max-width: 100%;
+	}
+	#background {
+		background-image: url(images/DSC_0995.jpg); 
 	}
 }

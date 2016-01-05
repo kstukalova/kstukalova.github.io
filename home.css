@@ -17,11 +17,11 @@ body {
 }
 
 #nav {
-	margin: 100px;
+	margin: 10px;
 }
 
 @media screen and (min-width: 992px) {
 	#nav {
-		margin: 10px;
+		margin: 100px;
 	}
 }

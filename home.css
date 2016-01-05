@@ -49,6 +49,14 @@ body {
 	border-bottom: 10px solid black;
 }
 
+#about:hover {
+	border-bottom: 10px solid black;
+}
+
+#photos:hover {
+	border-bottom: 10px solid black;
+}
+
 @media screen and (min-width: 992px) {
 	#nav {
 		margin: 85px;

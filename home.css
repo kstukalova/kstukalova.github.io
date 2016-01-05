@@ -19,3 +19,7 @@ body {
 #nav {
 	margin: 100px;
 }
+
+@media screen and (min-width: 992px) {
+	margin: 10px;
+}

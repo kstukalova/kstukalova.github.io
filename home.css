@@ -45,7 +45,7 @@ body {
 	font-size: xx-large;
 }
 
-#home:hover {
+#home {
 	border-bottom: 8px solid black;
 }
 

@@ -29,12 +29,12 @@ body {
 	font-variant: small-caps;
 	font-family: serif;
 	font-size: large;
-	font-color: black;
 	
 }
 
 #nav a {
 	text-decoration: none;
+	color: black;
 }
 
 

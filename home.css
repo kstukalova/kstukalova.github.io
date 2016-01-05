@@ -18,11 +18,11 @@ body {
 
 #nav {
 	margin: 10px;
+	text-align: center;
 }
 
 @media screen and (min-width: 992px) {
 	#nav {
 		margin: 85px;
-		text-align: center;
 	}
 }

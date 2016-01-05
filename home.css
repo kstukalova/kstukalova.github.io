@@ -1,13 +1,17 @@
 body { 
-  background: url(images/DSC_0995.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
 }
 
 #test {
 	height: 100%;
+	width: 100%;
+	background-image: url(images/DSC_0995.jpg); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	position: absolute;
 }

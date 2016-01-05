@@ -1,4 +1,4 @@
-html { 
+body { 
   background: url(images/DSC_0995.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,3 +8,6 @@ html {
   overflow: hidden;
 }
 
+#test {
+	height: 100%;
+}

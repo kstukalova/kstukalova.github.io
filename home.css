@@ -21,5 +21,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-	margin: 10px;
+	#nav {
+		margin: 10px;
+	}
 }

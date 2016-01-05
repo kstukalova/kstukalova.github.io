@@ -1,3 +1,6 @@
+body{
+ min-height:100%;
+ }
 body { 
   background: url(images/DSC_0995.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;

@@ -25,6 +25,9 @@ body {
 	max-width: 200px;
 	margin-left: auto;
 	margin-right: auto;
+
+	font-variant: small-caps;
+	font-family: serif;
 }
 
 #name {

@@ -30,5 +30,6 @@ body {
 	#nav {
 		margin: 85px;
 		text-align: left;
+		max-width: 100%;
 	}
 }

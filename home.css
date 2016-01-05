@@ -46,6 +46,10 @@ body {
 		text-align: left;
 		max-width: 100%;
 	}
+	#nav .col-md-2 {
+		text-align: right;
+	}
+	
 	#background {
 		background-image: url(images/DSC_0327_BW.jpg); 
 	}

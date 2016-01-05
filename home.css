@@ -6,27 +6,3 @@ html {
   background-size: cover;
 }
 
-#nav {
-	list-style-type: none;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #D5D5D5;
-}
-
-#nav li {
-    float: left;
-}
-
-#nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#nav li a:hover:not(.active) {
-    background-color: #111;
-}

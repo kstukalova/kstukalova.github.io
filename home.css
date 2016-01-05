@@ -7,7 +7,7 @@ body {
 #background {
 	height: 100%;
 	width: 100%;
-	background-image: url(images/DSC_0327.jpg); 
+	background-image: url(images/DSC_0327_BW.jpg); 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -29,7 +29,7 @@ body {
 #name {
 	font-variant: small-caps;
 	font-family: serif;
-	font-size: large;
+	font-size: xx-large;
 }
 
 @media screen and (min-width: 992px) {
@@ -39,6 +39,6 @@ body {
 		max-width: 100%;
 	}
 	#background {
-		background-image: url(images/DSC_0327.jpg); 
+		background-image: url(images/DSC_0327_BW.jpg); 
 	}
 }

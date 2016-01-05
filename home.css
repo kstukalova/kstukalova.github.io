@@ -8,7 +8,8 @@ html {
 
 #nav {
 	list-style-type: none;
-    margin: 0;
+    margin-left: 50;
+    margin-right: 50;
     padding: 0;
     overflow: hidden;
     background-color: #D5D5D5;

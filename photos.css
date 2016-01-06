@@ -77,3 +77,8 @@ body {
 		text-align: right;
 	}
 }
+
+#album_thumbnails .caption {
+	color: white;
+	font-family: Century Gothic;
+}

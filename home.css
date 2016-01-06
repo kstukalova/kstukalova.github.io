@@ -50,11 +50,11 @@ body {
 }
 
 #about:hover {
-	border-bottom: 8px solid black;
+	border-bottom: 5px solid black;
 }
 
 #photos:hover {
-	border-bottom: 8px solid black;
+	border-bottom: 5px solid black;
 }
 
 #nav .row .col-md-2 {

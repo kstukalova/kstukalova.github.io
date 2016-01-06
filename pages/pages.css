@@ -57,6 +57,7 @@ body {
 @media screen and (min-width: 992px) {
 	#nav {
 		margin: 85px;
+		margin-bottom: 15px;
 		text-align: left;
 		max-width: 100%;
 	}

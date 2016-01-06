@@ -81,4 +81,5 @@ body {
 #album_thumbnails .caption {
 	color: white;
 	font-family: 'Century Gothic';
+	text-align: center;
 }

@@ -16,6 +16,7 @@
 	padding: 0 0 56.25% 0;
 	overflow: hidden;
 	cursor: pointer;
+	background-color: transparent;
 }
 .blueimp-gallery .modal-footer {
 	margin: 0;
@@ -56,8 +57,7 @@
 	cursor: pointer;
 }
 .blueimp-gallery .modal-body .video-content a:after {
-	font-family: "Glyphicons Halflings";
-	-webkit-font-smoothing: antialiased;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 	content: "\e029";
 	font-size: 64px;
 	line-height: 64px;

@@ -88,3 +88,7 @@ body {
 	font-stretch: expanded;
 	white-space: nowrap;
 }
+
+#album_thumbnails .caption .date {
+	color: #ffa07a;
+}

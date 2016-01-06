@@ -87,6 +87,9 @@ body {
 	text-align: center;
 	font-stretch: expanded;
 	white-space: nowrap;
+}
+
+#album_thumbnails .caption a {
 	text-decoration: none;
 }
 

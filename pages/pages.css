@@ -10,6 +10,10 @@ body {
 	color: #ffa07a;
 }
 
+.pswp__container {
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 #nav {
 	margin: 10px;
 	text-align: center;
@@ -67,8 +71,4 @@ body {
 	#nav .col-md-2 {
 		text-align: right;
 	}
-}
-
-.blueimp-gallery .modal-body .video-content a:after {
-	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 }

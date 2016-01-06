@@ -89,6 +89,7 @@ body {
 
 .thumbnail .caption a {
 	text-decoration: none;
+	color: red;
 }
 
 #album_thumbnails .caption .date {

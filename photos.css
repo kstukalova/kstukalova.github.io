@@ -10,7 +10,6 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	overflow: hidden;
-	position: absolute;
 }
 
 .row .thumbnail {

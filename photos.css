@@ -87,6 +87,7 @@ body {
 	text-align: center;
 	font-stretch: expanded;
 	white-space: nowrap;
+	text-decoration: none;
 }
 
 #album_thumbnails .caption .date {

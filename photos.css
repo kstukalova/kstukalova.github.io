@@ -92,3 +92,7 @@ body {
 #album_thumbnails .caption .date {
 	color: #ffa07a;
 }
+
+img { 
+   border:1px solid #fefdfb;
+}

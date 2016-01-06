@@ -86,4 +86,5 @@ body {
 	font-size:15pt;
 	text-align: center;
 	font-stretch: expanded;
+	white-space: nowrap;
 }

@@ -89,7 +89,7 @@ body {
 	white-space: nowrap;
 }
 
-#album_thumbnails .caption a {
+a {
 	text-decoration: none;
 }
 

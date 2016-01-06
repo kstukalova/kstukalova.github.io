@@ -1,3 +1,7 @@
+body {
+	background-color: black;
+}
+
 #nav {
 	margin: 10px;
 	text-align: center;

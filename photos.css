@@ -87,7 +87,7 @@ body {
 	white-space: nowrap;
 }
 
-.caption a {
+.thumbnail .caption a {
 	text-decoration: none;
 }
 

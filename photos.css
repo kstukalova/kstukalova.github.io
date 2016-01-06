@@ -80,6 +80,7 @@ body {
 
 #album_thumbnails .caption {
 	color: white;
-	font-family: 'Century Gothic', Calibri;
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
+	font-stretch: expanded;
 }

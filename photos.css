@@ -85,11 +85,6 @@ body {
 	text-align: center;
 }
 
-.thumbnail .caption a {
-	text-decoration: none;
-	color: red;
-}
-
 #album_thumbnails .caption .date {
 	color: #ffa07a;
 }

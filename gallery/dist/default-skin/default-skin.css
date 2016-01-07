@@ -284,6 +284,8 @@ a.pswp__share--download:hover {
   line-height: 20px;
   color: #ffa07a; 
   font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight:100;
+  font-size:15pt;
 }
 
 .pswp__caption--empty {

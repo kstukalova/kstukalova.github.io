@@ -72,10 +72,10 @@ body {
 }
 
 .col-xs-6 {
-    padding: 0;
+    padding: 2px;
     margin-bottom: 0;
 }
 
-a .col-xs-6 {
+a {
     margin-bottom: 0;
 }

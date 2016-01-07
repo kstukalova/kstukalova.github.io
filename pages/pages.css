@@ -30,7 +30,9 @@ body {
 	color: black;
 }
 
-
+.thumbnail {
+	border: none;
+}
 
 #name {
 	font-variant: small-caps;

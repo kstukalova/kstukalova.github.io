@@ -73,6 +73,7 @@ body {
 
 .col-xs-6 {
     padding: 0;
+    margin-bottom: 0;
 }
 
 .col-xs-6 a {

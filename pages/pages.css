@@ -7,6 +7,10 @@ body {
 	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-weight:100;
 	font-size:20pt;
+	color: white;
+}
+
+.date {
 	color: #ffa07a;
 }
 

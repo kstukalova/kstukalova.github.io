@@ -10,23 +10,6 @@ body {
 	color: #ffa07a;
 }
 
-.my-gallery {
-  width: 100%;
-  margin: auto;
-}
-.my-gallery img {
-  width: 100%;
-  height: auto;
-}
-.my-gallery figure {
-  display: block;
-  margin: 0 5px 5px 0;
-  width: 150px;
-}
-.my-gallery figcaption {
-  display: none;
-}
-
 #nav {
 	margin: 10px;
 	text-align: center;

@@ -333,7 +333,7 @@
 	    // Parse URL and open gallery if it contains #&pid=3&gid=1
 	    var hashData = photoswipeParseHash();
 	    if(hashData.pid && hashData.gid) {
-	    	console.log();galleryElements[ hashData.gid - 1 ]
+	    	console.log(galleryElements[ hashData.gid - 1 ]);
 	        openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
 	    }
 	};

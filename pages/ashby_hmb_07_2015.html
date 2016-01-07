@@ -39,26 +39,37 @@
 	<p id="title">Ashby and Half Moon Bay</p>
 
 	<!-- Gallery display -->
+	<div class="container">
 	<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
+	<div class="row">
 	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 	        <a href="../images/album_thumbnails/stanford.jpg" itemprop="contentUrl" data-size="400x400">
+	        <div class="col-xs-6">
+	        <div class="thumbnail">
 	            <img src="../images/album_thumbnails/stanford.jpg" itemprop="thumbnail" alt="Image description" />
+	            </div></div>
 	        </a>
 	    </figure>
 
 	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 	        <a href="../images/album_thumbnails/park.jpg" itemprop="contentUrl" data-size="400x400">
+	        <div class="col-xs-6">
+	        <div class="thumbnail">
 	            <img src="../images/album_thumbnails/park.jpg" itemprop="thumbnail" alt="Image description" />
+	            </div></div>
 	        </a>
 	    </figure>
 
 	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 	        <a href="../images/album_thumbnails/park.jpg" itemprop="contentUrl" data-size="400x400">
+	        <div class="col-xs-6">
+	        <div class="thumbnail">
 	            <img src="../images/album_thumbnails/park.jpg" itemprop="thumbnail" alt="Image description" />
+	            </div></div>
 	        </a>
 	    </figure>
-
+	    </div>
+	</div>
 	</div>
 
 
@@ -333,7 +344,6 @@
 	    // Parse URL and open gallery if it contains #&pid=3&gid=1
 	    var hashData = photoswipeParseHash();
 	    if(hashData.pid && hashData.gid) {
-	    	console.log(galleryElements[ hashData.gid - 1 ]);
 	        openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
 	    }
 	};

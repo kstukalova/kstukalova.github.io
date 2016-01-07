@@ -10,14 +10,9 @@ body {
 	color: #ffa07a;
 }
 
-.pswp__caption {
-	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-	color: red;
-}
-
 .my-gallery {
   width: 100%;
-  float: left;
+  margin: auto;
 }
 .my-gallery img {
   width: 100%;

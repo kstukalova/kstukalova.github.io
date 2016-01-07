@@ -70,3 +70,11 @@ body {
 		text-align: right;
 	}
 }
+
+.col-xs-6 {
+    padding: 0;
+}
+
+.col-xs-6 a {
+    margin-bottom: 0;
+}

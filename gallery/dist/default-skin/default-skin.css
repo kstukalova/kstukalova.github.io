@@ -269,7 +269,10 @@ a.pswp__share--download:hover {
   min-height: 44px; }
   .pswp__caption small {
     font-size: 11px;
-    color: #BBB; }
+    color: #BBB;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: red;
+     }
 
 .pswp__caption__center {
   text-align: left;

@@ -266,6 +266,7 @@ a.pswp__share--download:hover {
   left: 0;
   top: 0;
   width: 100%;
+  text-align: center;
   min-height: 44px; }
   .pswp__caption small {
     font-size: 11px;

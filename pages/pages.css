@@ -83,16 +83,16 @@ body {
 }
 
 .col-xs-4 {
-    padding: 4px;
+    padding: 1px;
     margin-bottom: 0;
 }
 
 .col-md-2 {
-    padding: 4px;
+    padding: 1px;
     margin-bottom: 0;
 }
 
 .row {
-    margin-bottom: -5px;
-    margin-top: -5px;
+    margin-bottom: -15px;
+    margin-top: -15px;
 }

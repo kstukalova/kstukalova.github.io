@@ -63,6 +63,10 @@ body {
 	padding-top: 5px;
 }
 
+#nav .col-md-2 {
+	text-align: right;
+}
+
 @media screen and (min-width: 992px) {
 	#nav {
 		margin: 85px;

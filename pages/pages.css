@@ -96,3 +96,7 @@ body {
     margin-bottom: -15px;
     margin-top: -15px;
 }
+
+.container {
+	margin-bottom: 50px;
+}

@@ -80,17 +80,17 @@ body {
 	}
 }
 
-#photos .col-xs-4 {
+#nav .col-xs-4 {
     padding: 1px;
     margin-bottom: 0;
 }
 
-#photos .col-md-2 {
+#nav .col-md-2 {
     padding: 1px;
     margin-bottom: 0;
 }
 
-#photos.row {
+#nav.row {
     margin-bottom: -15px;
     margin-top: -15px;
 }

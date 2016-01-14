@@ -96,7 +96,7 @@
 	<div id="skrollr-body">
 		<div id="top"></div>
 		<div class="gap gap-100" style="background-image:url(images/DSC_0327.jpg);"></div>
-		<div class="content content-full content-about">
+		<div class="content content-full content-about" id="about">
 			<h1 style="text-align: center">About</h1>
 		</div>
 		<div class="gap gap-100 gap-black" style="background-image:url(images/DSC_0327.jpg);"></div>
@@ -236,12 +236,12 @@
 		// $('p').css('max-height',$(window).height());
 		// $('p').css('overflow','auto');
 
-		// $(function(){
-		//   // get hash value
-		//   var hash = window.location.hash;
-		//   // now scroll to element with that id
-		//   $('html, body').animate({ scrollTop: $(hash).offset().top -100 });
-		// });
+		$(function(){
+		  // get hash value
+		  var hash = window.location.hash;
+		  // now scroll to element with that id
+		  $('html, body').animate({ scrollTop: $(hash).offset().top -100 });
+		});
 
 		$('p').css({
 		    overflow: 'auto',
@@ -252,8 +252,8 @@
 			var home = document.querySelector("#home");
 		    var about = document.querySelector("#about");
 		    var photos = document.querySelector("#photos");
-		   	var hT = $('#content_about').offset().top,
-		       hH = $('#content_about').outerHeight(),
+		   	var hT = $('#content_1').offset().top,
+		       hH = $('#content_1').outerHeight(),
 		       wH = $(window).height(),
 		       wS = $(this).scrollTop();
 		   if (wS > (hT+hH-wH-550)){
@@ -314,9 +314,7 @@
 		mobileDeceleration: 0.004
 	});
 
-	function fix_height() {
-
-	}
+	
 	</script>
 </body>
 

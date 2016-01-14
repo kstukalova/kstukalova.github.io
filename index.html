@@ -252,8 +252,8 @@
 			var home = document.querySelector("#home");
 		    var about = document.querySelector("#about");
 		    var photos = document.querySelector("#photos");
-		   	var hT = $('.content_about').offset().top,
-		       hH = $('.content_about').outerHeight(),
+		   	var hT = $('#content_about').offset().top,
+		       hH = $('#content_about').outerHeight(),
 		       wH = $(window).height(),
 		       wS = $(this).scrollTop();
 		   if (wS > (hT+hH-wH-550)){
@@ -262,8 +262,8 @@
 		       photos.style.backgroundColor = "#D5D5D5";
 		   }
 
-		   var hT = $('.content-photos').offset().top,
-		       hH = $('.content-photos').outerHeight();
+		   var hT = $('#content-photos').offset().top,
+		       hH = $('#content-photos').outerHeight();
 
 		   if (wS > (hT+hH-wH-150)){
 		       photos.style.backgroundColor = "#e7e7e7";

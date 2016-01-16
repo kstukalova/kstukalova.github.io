@@ -34,10 +34,6 @@
 		
 		// Init Skrollr
 		var s = skrollr.init({
-			mobileCheck: function() {
-                //hack - forces mobile version to be off
-                return false;
-            },
 		    render: function(data) {
 		    
 		        //Debugging - Log the current scroll position.

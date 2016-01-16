@@ -154,7 +154,7 @@ main {
     font-family: 'Raleway', sans-serif;
 }
 #me {
-	max-width: 500px;
+	max-width: 400px;
     width: 100%;
     height: auto;
     vertical-align: center;
@@ -167,6 +167,11 @@ main {
 	margin-top:auto;
 	margin-bottom:auto;
 	color: white;
+}
+@media only screen and (min-width: 40.063em) { 
+	  #about-text {
+		padding-top: 50px;
+	}
 }
 .row-centered {
     text-align:center;

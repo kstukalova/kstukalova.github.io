@@ -21,10 +21,6 @@
 	background: #000;
 }*/
 
-html, body {
-	height: 100%;
-}
-
 #nav {
 	text-align: center;
 	background: #D5D5D5;
@@ -61,23 +57,6 @@ html, body {
 	max-width: 300px;
 }
 
-#wall_1 {
-    background: url(images/DSC_0327.jpg);
-    background-attachment: fixed;
-    background-position: right bottom;
-    background-size: cover;
-}
-#wall_2 {
-    background: url(images/DSC_0057.jpg);
-    background-attachment: fixed;
-    background-position: left bottom;
-    background-size: cover;
-}
-#wall_3 {
-    background-color: black;
-    background-attachment: fixed;
-}
-
 #name {
 	font-variant: small-caps;
 	font-family: serif;
@@ -108,145 +87,109 @@ html, body {
 	padding-top: 5px;
 }
 
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: transparent;
-  border: none !important;
+
+/* CSS */
+main {
+	overflow-x: hidden;
+}
+.hsContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #000;
-    background-color: #000;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #ccc;
-    background-color: #000;
-  }
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+.copy h2 {
+	color: #ffffff;
 }
+.hsContent h2 {
+	color: #ffffff;
+	position: absolute;
+	top: 10px;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-weight:100;
+	font-size:30pt;
+	text-align: center;
+	width: 100%;
+}
+.hsContent p {
+	color: #b2b2b2;
+}
+.hsContent a {
+	color: #b2b2b2;
+	text-decoration: underline;
+}
+.bgBlack {
+	background-color: rgba(0,0,0,0.75);
+	padding: 3px 10px;
+}
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('images/DSC_0327.jpg')}
+#last .bcg {background-image:url('images/DSC_0327.jpg')}
 
-/*@media screen and (min-width: 992px) {
-	#nav {
-		margin: 85px;
-		text-align: left;
-		max-width: 100%;
+	section {
+		opacity: 0;
 	}
-	#name {
-		padding-left: 50px;
+	.loaded section,
+	.no-js section {
+		opacity: 1;
+		-webkit-transition: opacity 300ms ease-out;
+		-moz-transition: opacity 300ms ease-out;
+		transition: opacity 300ms ease-out;
 	}
-	#nav .col-md-2 {
-		text-align: right;
+	main {
+		overflow-x: hidden;
 	}
+#slide-2 .bcg {
+    background: none; 
+    background-color: #000; 
+    font-family: 'Raleway', sans-serif;
+}
+#me {
+	max-width: 500px;
+    width: 100%;
+    height: auto;
+    vertical-align: center;
 
-	#background {
-		background-image: url(images/DSC_0327_BW.jpg); 
-	}
-}*/
+}
 
-* {
-	padding:0;
-	margin:0;
-}
-html, body {
-	height:100%;
-}
-.skrollr-desktop body {
-	height:100% !important;
-}
-body {
-	font-family:sans-serif;
-}
-p {
-	margin:1em 0;
-}
-.parallax-image-wrapper {
-	position:fixed;
-	left:0;
-	width:100%;
-	overflow:hidden;
-}
-.parallax-image-wrapper-50 {
-	height:50%;
-	top:-50%;
-}
-.parallax-image-wrapper-100 {
-	height:100%;
-	top:-100%;
-}
-.parallax-image {
-	display:none;
-	position:absolute;
-	bottom:0;
-	left:0;
-	width:100%;
-	background-repeat:no-repeat;
-	background-position:center;
-	background-size:cover;
-}
-.parallax-image-50 {
-	height:200%;
-	top:-50%;
-}
-.parallax-image-100 {
-	height:100%;
-	top:0;
-}
-.parallax-image.skrollable-between {
-	display:block;
-}
-.no-skrollr .parallax-image-wrapper {
-	display:none !important;
-}
-#skrollr-body {
-	height:100%;
-	overflow:visible;
+#about-text {
 	position:relative;
+	max-width: 250px;
+	margin-top:auto;
+	margin-bottom:auto;
+	color: white;
 }
-.gap {
-	background:transparent center no-repeat;
-	background-size:cover;
+.row-centered {
+    text-align:center;
 }
-.skrollr .gap {
-	background:transparent !important;
+.col-centered {
+	display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
-.gap-50 {
-	height:50%;
-}
-.gap-100 {
-	height:100%;
-}
-.header, .content {
-	background:#fff;
-	padding:1em;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-}
-.content-full {
-	height:100%;
+#about-slide {
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
-.content-photos {
-	background: #000;
-	height: 10000px;
-}
-.content-about {
-	background: #f6f6f6;
-}
-#done {
-	height:1000%;
-}
+#background-2 .bcg {background-image:url('images/DSC_0057.jpg')}
+
+.bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2}
+
+.curtainContainer {width: 100%; height: 100%; position: relative;}
+.curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
+.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
+.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
+

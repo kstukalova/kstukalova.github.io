@@ -4,6 +4,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
@@ -12,16 +13,161 @@
 	<!-- Modern Family font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>	
 	
-	<!-- parallax plugin -->
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="skrollr-master/src/skrollr.js"></script>
-	<script src="/js/_main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./home.css">
+	<style>
+		/* CSS */
+		.hsContainer {
+		    display: table;
+		    table-layout: fixed;
+		    width: 100%;
+		    height: 100%;
+		    overflow: hidden;
+		    position: relative;
+		}
+		.hsContent {
+		    max-width: 450px;
+		    margin: -150px auto 0 auto;
+		    display: table-cell;
+		    vertical-align: middle;
+		    color: #ebebeb;
+		    padding: 0 8%;
+		    text-align: center
+		}
+		.bcg {
+		    background-position: center center;
+		    background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    background-size: cover;
+		    height: 100%;
+		    width: 100%;
+		}
+		.hsContent h2,
+	.copy h2 {
+		color: #ffffff;
+		font-size: 45px;
+		line-height: 48px;
+		margin-bottom: 12px;
+	}
+	.hsContent p {
+		width: 400px;
+		margin: 0 auto;
+		color: #b2b2b2;
+	}
+	.hsContent a {
+		color: #b2b2b2;
+		text-decoration: underline;
+	}
+	.bgBlack {
+		background-color: rgba(0,0,0,0.75);
+		padding: 3px 10px;
+	}
+		/* Slide 1 */
+		#slide-1 .bcg {background-image:url('images/DSC_0327.jpg')}
+
+		.loading {
+				background-color: #000;
+			}
+			section {
+				min-width: 960px;
+				opacity: 0;
+			}
+			.loaded section,
+			.no-js section {
+				opacity: 1;
+				-webkit-transition: opacity 300ms ease-out;
+				-moz-transition: opacity 300ms ease-out;
+				transition: opacity 300ms ease-out;
+			}
+			main {
+				overflow-x: hidden;
+			}
+	/* CSS - Slide 2 */
+	#slide-2 .bcg {
+	    background: none;
+	    background-color: #010101;
+	    text-align: center
+	}
+
+	/* CSS - Slide 3 */
+	#slide-3 .bcg {background-image:url('images/DSC_0057.jpg')}
+	</style>
 </head>
 
-<body>
+<body class="loading">
+	<!-- HTML -->
+	<section id="slide-1" class="homeSlide">
+	    <div class="bcg"
+	        data-center="background-position: 50% 0px;"
+	        data-top-bottom="background-position: 50% -100px;"
+	        data-anchor-target="#slide-1"
+	    >
+	        <div class="hsContainer">
+	            <div class="hsContent"
+	                data-center="opacity: 1"
+	                data-106-top="opacity: 0"
+	                data-anchor-target="#slide-1 h2"
+	            >
+	                <h2>Fade out elements before <br>they leave viewport</h2>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<!-- HTML -->
+	<section id="slide-2">
+	    <div class="bcg"
+	        data-0="background-color:rgb(1,27,59);"
+	        data-top="background-color:(0,0,0);"
+	        data-anchor-target="#slide-2"
+	    >
+	        <div class="hsContainer">
+	            <div class="hsContent">
+	                <h2
+	                    data--200-bottom="opacity: 0"
+	                    data-center="opacity: 1"
+	                    data-206-top="opacity: 1"
+	                    data-106-top="opacity: 0"
+	                    data-anchor-target="#slide-2 h2"
+	                >
+	                    Fade me in and out
+	                </h2>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<!-- HTML -->
+	<section id="slide-3" class="homeSlide">
+	    <div class="bcg"
+	        data-center="background-position: 0px 50%;"
+	        data-bottom-top="background-position: 0px 40%;"
+	        data-top-bottom="background-position: -40px 50%;"
+	        data-anchor-target="#slide-3"
+	    >
+	        <div class="hsContainer">
+	            <div class="hsContent">
+	                <div class="plaxEl"
+	                    data-106-top="opacity: 0"
+	                    data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"
+	                    data--30p-top="opacity: 1;"
+	                    data--60p-top="opacity: 0;"
+	                    data-anchor-target="#slide-3"
+	                >
+	                    <h2>Fixed element fading in and out</h2>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/_main.js"></script>
 </body>
 
 </html>

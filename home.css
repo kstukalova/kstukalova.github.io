@@ -198,8 +198,4 @@ main {
 .curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
 .curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
 
-#skrollr-body {
-    float: left;
-    width: 100%;
-    height: 100%;
-}
+

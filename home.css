@@ -112,7 +112,7 @@ main {
 .hsContent h2 {
 	color: #ffffff;
 	position: absolute;
-	top: 10px;
+	top: 30px;
 	font-family: 'Raleway', sans-serif;
 	color: white;
 	font-weight:100;
@@ -151,7 +151,6 @@ main {
 #slide-2 .bcg {
     background: none; 
     background-color: #000; 
-    font-family: 'Raleway', sans-serif;
 }
 #me {
 	max-width: 400px;
@@ -168,26 +167,30 @@ main {
 	margin-bottom:auto;
 	color: white;
 	padding-top: 50px;
+	font-family: 'Raleway', sans-serif;
+    font-size: small;
 }
 @media (min-width: 768px) { 
 	  #about-text {
 		padding-top: 0px;
+		font-size: large;
 	}
 }
 .row-centered {
     text-align:center;
 }
 .col-centered {
-	display:inline-block;
+    display:inline-block;
     float:none;
     /* reset the text-align */
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
+    vertical-align: middle;
 }
 #about-slide {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 150px;
+	padding-bottom: 50px;
 }
 
 #background-2 .bcg {background-image:url('images/DSC_0057.jpg')}
@@ -199,4 +202,10 @@ main {
 .curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
 .curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
 
+.loading {
+	background-color: #000;
+}
 
+#skrollr-body {
+	overflow-x: hidden;
+}

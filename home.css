@@ -32,7 +32,7 @@
 	margin-right: auto;
 
 	font-variant: small-caps;
-	font-family: serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: x-large;
 	
     width: 100%;
@@ -59,7 +59,7 @@
 
 #name {
 	font-variant: small-caps;
-	font-family: serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: xx-large;
 }
 
@@ -109,7 +109,7 @@ main {
 .copy h2 {
 	color: #ffffff;
 }
-.hsContent h2 {
+h2 {
 	color: #ffffff;
 	position: absolute;
 	top: 30px;
@@ -152,6 +152,7 @@ main {
     background: none; 
     background-color: #000; 
 }
+
 #me {
 	max-width: 400px;
     width: 100%;
@@ -195,12 +196,22 @@ main {
 
 #background-2 .bcg {background-image:url('images/DSC_0057.jpg')}
 
+ #background-2 {
+ 	font-family: 'Raleway', sans-serif;
+ }
+
 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2}
 
 .curtainContainer {width: 100%; height: 100%; position: relative;}
 .curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
-.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
-.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
+.curtainContainer .copy {padding-top: 100px;z-index: 9; position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center; background-color: #000;}
+#album_thumbnails {
+	z-index: 10;
+	margin-top: 50px;
+}
+#done {
+	padding-top: 200px;
+}
 
 .loading {
 	background-color: #000;

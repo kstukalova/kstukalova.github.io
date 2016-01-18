@@ -259,6 +259,8 @@
 			var home = document.querySelector("#home");
 		    var about = document.querySelector("#about");
 		    var photos = document.querySelector("#photos");
+
+		    // about slide
 		   	var hT = $('#slide-2').offset().top,
 		       hH = $('#slide-2').outerHeight(),
 		       wH = $(window).height(),
@@ -269,19 +271,18 @@
 		       photos.style.backgroundColor = "#D5D5D5";
 		   }
 
-
+		   // photos slide
 		   var hT = $('#slide-3').offset().top,
 		       hH = $('#slide-3').outerHeight();
-
-		   if (wS > hT - wH/2){
+		   if (wS > hT - wH*.9){
 		       photos.style.backgroundColor = "#e7e7e7";
 		       home.style.backgroundColor = "#D5D5D5";
 		       about.style.backgroundColor = "#D5D5D5";
 		   }
 
+		   // top of home page
 		   var hT = $('#slide-1').offset().top,
 		       hH = $('#slide-1').outerHeight();
-
 		   if (wS < wH/2){
 		       home.style.backgroundColor = "#e7e7e7";
 		       about.style.backgroundColor = "#D5D5D5";

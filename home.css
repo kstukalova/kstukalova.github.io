@@ -153,6 +153,11 @@ h2 {
     background-color: #000; 
 }
 
+#slide-3 .bcg {
+    background: none; 
+    background-color: #000; 
+}
+
 #me {
 	max-width: 400px;
     width: 100%;

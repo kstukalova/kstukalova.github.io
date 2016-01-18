@@ -38,9 +38,9 @@
 
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><div id="home"><a href="#">Home <span class="sr-only">(current)</span></a></div></li>
-					<li><div id="about"><a href="#about">About</a></div></li>
-					<li><div id="photos"><a href="#photos">Photos</a></div></li>
+					<li id = "home-li" class="active"><div id="home"><a href="#">Home <span class="sr-only">(current)</span></a></div></li>
+					<li id = "about-li"><div id="about"><a href="#about">About</a></div></li>
+					<li id = "photos-li"><div id="photos"><a href="#photos">Photos</a></div></li>
 				</ul>
 			</div>
 		</div>
@@ -254,11 +254,11 @@
 
 		});
 		
-		//-----------------HIGHLIGHT CORRECT NAVBAR AREA------------//
+		//-----------------HIGHLIGHT CORRECT NAVBAR AREA------------
 		$(window).scroll(function() {
-			var home = document.querySelector("#home");
-		    var about = document.querySelector("#about");
-		    var photos = document.querySelector("#photos");
+			var home = document.getElementById("home-li");
+		    var about = document.getElementById("about-li");
+		    var photos = document.getElementById("photos-li");
 
 		    // about slide
 		   	var hT = $('#slide-2').offset().top,
@@ -266,27 +266,27 @@
 		       wH = $(window).height(),
 		       wS = $(this).scrollTop();
 		   if (wS > hT - 10000000){
-		       about.style.backgroundColor = "#e7e7e7";
-		       home.style.backgroundColor = "#D5D5D5";
-		       photos.style.backgroundColor = "#D5D5D5";
+		       about.style.borderBottom = "3px solid #000";
+		       home.style.borderBottom = "none";
+		       photos.style.borderBottom = "none";
 		   }
 
 		   // photos slide
 		   var hT = $('#slide-3').offset().top,
 		       hH = $('#slide-3').outerHeight();
 		   if (wS > hT - wH*.9){
-		       photos.style.backgroundColor = "#e7e7e7";
-		       home.style.backgroundColor = "#D5D5D5";
-		       about.style.backgroundColor = "#D5D5D5";
+		       photos.style.borderBottom = "3px solid #000";
+		       home.style.borderBottom = "none";
+		       about.style.borderBottom = "none";
 		   }
 
 		   // top of home page
 		   var hT = $('#slide-1').offset().top,
 		       hH = $('#slide-1').outerHeight();
 		   if (wS < wH/2){
-		       home.style.backgroundColor = "#e7e7e7";
-		       about.style.backgroundColor = "#D5D5D5";
-		       photos.style.backgroundColor = "#D5D5D5";
+		       home.style.borderBottom = "3px solid #000";
+		       about.style.borderBottom = "none";
+		       photos.style.borderBottom = "none";
 		   }
 		});
 	</script>

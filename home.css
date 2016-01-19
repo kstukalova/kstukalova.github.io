@@ -31,9 +31,9 @@
 	margin-left: auto;
 	margin-right: auto;
 
-	font-variant: small-caps;
 	font-family: 'Raleway', sans-serif;
 	font-size: x-large;
+	font-weight:100;
 	
     width: 100%;
     position: fixed;
@@ -48,39 +48,35 @@
 	color: black;
 }
 
-#content_1 {
-	background-color: white;
-}
-
-#content_1 > p{
-	max-width: 300px;
-}
-
 #name {
-	font-variant: small-caps;
 	font-family: 'Raleway', sans-serif;
-	font-size: xx-large;
-}
-
-.navbar-header {
-	border-bottom: none;
+	font-size: 200%;
 }
 
 .navbar-nav {
 	padding-top: 8px;
 }
 
-#home-li
-{
-    border-bottom:3px solid #000;
-    width: 120px;
-}
-
 #home {
+	border-bottom:3px solid #000;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-left:15px;
-    margin-right:15px;
+	margin-left:10px;
+    margin-right:10px;
+    width: 100px;
+    
+}
+
+#home:hover {
+	border-bottom:3px solid #000 !important;
+}
+
+#about:hover {
+	border-bottom:3px solid #000 !important;
+}
+
+#photos:hover {
+	border-bottom:3px solid #000 !important;
 }
 
 #about {
@@ -88,26 +84,36 @@
 	padding-right: 10px;
 	margin-left:15px;
     margin-right:15px;
+    width: 100px;
+    
 }
 
 #photos {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-left:15px;
+	width: 100px;
+	
 }
 
 @media (max-width: 768px) { 
   	#home {
-		margin-left:0px;
-    	margin-right:0px;
+    	margin: auto;
+    	padding-bottom: 5px;
 	}
 	#about {
-		margin-left:0px;
-    	margin-right:0px;
+		margin: auto;
+		padding-bottom: 5px;
+    	padding-top: 5px;
 	}
 	#photos {
-		margin-left:0px;
-    	margin-right:0px;
+		margin: auto;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+	.navbar-default div.navbar-collapse {
+	    border-top: 1px solid #d9d9d9;
+	    box-shadow:none;
 	}
 }
 
@@ -248,4 +254,25 @@ h2 {
 #skrollr-body {
 	overflow-x: hidden;
 }
+#album_thumbnails .caption {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight:100;
+	font-size:15pt;
+	text-align: center;
+}
 
+#album_thumbnails .caption .date {
+	color: #ffa07a;
+}
+
+img { 
+   border:1px solid #fdf9f3;
+}
+
+.row .thumbnail {
+    border:0;
+    box-shadow:0;
+    border-radius:0;
+    background-color: transparent;
+}

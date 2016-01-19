@@ -10,9 +10,6 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 	<!-- Modern Family font -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>	
 	
 	<!-- parallax plugin -->
@@ -74,7 +71,7 @@
 			                <div class="container" style="width:100%;">
 			                	<div class="row row-centered">
 			                			<div class="col-sm-6 col-xs-12 col-centered">
-			                			<img id="me" class="img-responsive center-block"src="images/DSC_0731.jpg">
+			                			<img id="me" class="img-responsive center-block"src="images/DSC_3441.jpg">
 			                			</div>
 			                		<div class="col-sm-6 col-xs-12 col-centered" id="about-text">
 			                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -130,6 +127,7 @@
 												<div class="caption">SF Zoo <span class="date">|&nbsp01&#8209;2016</span></div>
 											</div>
 										</div>
+
 										<div class="col-xs-6 col-md-3">
 											<div class="thumbnail">
 												<a href="pages/tahoe_12_2015/tahoe_12_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/tahoe.jpg"></a>
@@ -169,6 +167,7 @@
 											</div>
 										</div>
 									</div>
+									
 									<div class="row">
 										<div class="col-xs-6 col-md-3">
 											<div class="thumbnail">
@@ -216,12 +215,12 @@
 		});
 		$("#about").click(function() {
 		    $('html, body').animate({
-		        scrollTop: $("#about-slide").offset().top - 50
+		        scrollTop: $("#about-slide").offset().top - 80
 		    }, 500);
 		});
 		$("#photos").click(function() {
 		    $('html, body').animate({
-		        scrollTop: $(".content-photos").offset().top - 50
+		        scrollTop: $(".content-photos").offset().top - 70
 		    }, 2000);
 		});
 
@@ -256,9 +255,9 @@
 		
 		//-----------------HIGHLIGHT CORRECT NAVBAR AREA------------
 		$(window).scroll(function() {
-			var home = document.getElementById("home-li");
-		    var about = document.getElementById("about-li");
-		    var photos = document.getElementById("photos-li");
+			var home = document.getElementById("home");
+		    var about = document.getElementById("about");
+		    var photos = document.getElementById("photos");
 
 		    // about slide
 		   	var hT = $('#slide-2').offset().top,

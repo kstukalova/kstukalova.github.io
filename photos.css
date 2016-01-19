@@ -20,18 +20,25 @@ body {
 }
 
 #nav {
-	margin: 10px;
 	text-align: center;
 	background: #D5D5D5;
-	padding: 15px;
-	max-width: 350px;
+	padding: 10px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
 	margin-left: auto;
 	margin-right: auto;
 
-	font-variant: small-caps;
-	font-family: serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: x-large;
+	font-weight:100;
 	
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+    -webkit-box-shadow:0px 0px 20px rgba(44,44,44,.3);
 }
 
 #nav a {
@@ -39,45 +46,72 @@ body {
 	color: black;
 }
 
-
-
 #name {
-	font-variant: small-caps;
-	font-family: serif;
-	font-size: xx-large;
+	font-family: 'Raleway', sans-serif;
+	font-size: 200%;
+}
+
+.navbar-nav {
+	padding-top: 8px;
+}
+
+#home {
+	border-bottom:3px solid #000;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left:10px;
+    margin-right:10px;
+    width: 100px;
+    
 }
 
 #home:hover {
-	border-bottom: 5px solid black;
+	border-bottom:3px solid #000 !important;
 }
 
 #about:hover {
-	border-bottom: 5px solid black;
+	border-bottom:3px solid #000 !important;
+}
+
+#photos:hover {
+	border-bottom:3px solid #000 !important;
+}
+
+#about {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left:15px;
+    margin-right:15px;
+    width: 100px;
+    
 }
 
 #photos {
-	border-bottom: 5px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left:15px;
+	width: 100px;
+	
 }
 
-#nav .row .col-md-2 {
-	padding-top: 5px;
-}
-
-#nav .col-md-2 {
-	text-align: right;
-}
-
-@media screen and (min-width: 992px) {
-	#nav {
-		margin: 85px;
-		text-align: left;
-		max-width: 100%;
+@media (max-width: 768px) { 
+  	#home {
+    	margin: auto;
+    	padding-bottom: 5px;
 	}
-	#name {
-		padding-left: 50px;
+	#about {
+		margin: auto;
+		padding-bottom: 5px;
+    	padding-top: 5px;
 	}
-	#nav .col-md-2 {
-		text-align: right;
+	#photos {
+		margin: auto;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+	.navbar-default div.navbar-collapse {
+	    border-top: 1px solid #d9d9d9;
+	    box-shadow:none;
 	}
 }
 

@@ -11,6 +11,9 @@
 	<!-- Core CSS file -->
 	<link rel="stylesheet" href="../../gallery/dist/photoswipe.css"> 
 
+	<!-- Modern Family font -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>	
+
 	<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
 	     In the folder of skin CSS file there are also:
 	     - .png and .svg icons sprite, 
@@ -27,14 +30,29 @@
 </head>
 
 <body>
-	<div class="container-fluid" id="nav">
-	<div class="row">
-		<div class="col-md-4" id="name"><a href="../../index.html">Katya&nbspStukalova</a></div>
-		<div class="col-md-2"><a id="home" href="../../index.html">Home</a></div>
-		<div class="col-md-2"><a id="about" href="../../about.html">About</a></div>
-		<div class="col-md-2"><a id="photos" href="../../photos.html">Photos</a></div>
-	</div>
-	</div>
+	<div class="navbar navbar-default nav-collapse navbar-fixed-top">
+
+		<div class="container" id="nav">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      	</button>
+		      	<a class="navbar-brand" href="index.html"><div id="name">Katya Stukalova</div></a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li id = "home-li" class="active"><div id="home"><a href="#">Home <span class="sr-only">(current)</span></a></div></li>
+					<li id = "about-li"><div id="about"><a href="http://kstukalova.github.io/#about">About</a></div></li>
+					<li id = "photos-li"><div id="photos"><a href="http://kstukalova.github.io/#photos">Photos</a></div></li>
+				</ul>
+			</div>
+		</div>
+	</div> <!--navbar navbar-default-->
 
 	<p id="title">Ashby and Half Moon Bay &nbsp;<span class="date">|&nbsp&nbsp06&#8209;2015</span></p>
 

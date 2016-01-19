@@ -200,20 +200,16 @@
 		            </div>
 		         </div>
 		    </div>
-		</section>
-			
+		</section>	
 	</div>
 
-		
-        <!-- Section 2 -->
-        <!-- Section 3 -->
-        <!-- Section 4 -->         
 	 <script>
 	 	//-----------------ANIMATE SCROLLING FROM NAVBAR-------------------//
 		$("#home").click(function() {
 		    $('html, body').animate({ scrollTop: 0 }, 'slow'); return false; 
 		});
 		$("#about").click(function() {
+			console.log( $("#about-slide").offset().top - 80);
 		    $('html, body').animate({
 		        scrollTop: $("#about-slide").offset().top - 80
 		    }, 500);
@@ -221,7 +217,7 @@
 		$("#photos").click(function() {
 		    $('html, body').animate({
 		        scrollTop: $(".content-photos").offset().top - 70
-		    }, 2000);
+		    }, 1000);
 		});
 
 		//-----------------HIDE NAVBAR ON SMALL SCREENS AFTER CLICK------------//
@@ -243,15 +239,26 @@
 		  });
 		});
 
-		jQuery(window).load(function () {
-		    var pathname = window.location.pathname;
-			if (pathname.indexOf("#about") != -1) {
-				$('html, body').animate({
-			        scrollTop: $("#about-slide").offset().top - 50
-			    }, 500);
-			}
+		//-----------------SCROLL TO CORRECT AREA------------
+		// jQuery(window).load(function () {
+		//     var pathname = window.location.hash.substr(1);
+		// 	if (pathname == "about") {
+		// 		$('html, body').animate({
+		// 	        scrollTop: $("#about-slide").offset().top - 80
+		// 	    }, 500);
+		// 	}
 
-		});
+		// });
+
+		// jQuery(document).ready(function () {
+		//     // Handler for .ready() called.
+		//     console.log($("#about-slide").offset().top - 80);
+		//     $('html, body').delay(1000).animate({
+		//         scrollTop: $("#about-slide").offset().top - 80
+		//     }, 'slow');
+		// });
+
+		
 		
 		//-----------------HIGHLIGHT CORRECT NAVBAR AREA------------
 		$(window).scroll(function() {
@@ -292,6 +299,18 @@
     <script src="js/imagesloaded.js"></script>
     <script src="js/skrollr.js"></script>
     <script src="js/index.js"></script>
+    <script>
+
+
+
+  //   	$(window).load(function() {
+		//     // weave your magic here.
+		//     console.log($("#about-slide").offset().top - 80);
+		//     $('html, body').delay(1000).animate({
+		//         scrollTop: $("#about-slide").offset().top - 80
+		//     }, 'slow');
+		// });
+	</script>
 </body>
 
 

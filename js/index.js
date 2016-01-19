@@ -26,7 +26,17 @@
 		      
 		      // Fade in sections
 			  $body.removeClass('loading').addClass('loaded');
-			  
+			  var pathname = window.location.hash.substr(1);
+			if (pathname == "about") {
+				$('html, body').animate({
+			        scrollTop: $("#about-slide").offset().top - 80
+			    }, 'slow');
+			} 
+			else if (pathname == "photos") {
+				$('html, body').animate({
+		        scrollTop: $(".content-photos").offset().top - 70
+		    }, 1000);
+			}
 		}, 800);
 	});
 	

@@ -21,6 +21,10 @@
 	background: #000;
 }*/
 html { height: 100%; }
+
+#background-1 {
+	height: 100vh;
+}
 #nav {
 	text-align: center;
 	background: #D5D5D5;

@@ -23,13 +23,12 @@
 html { height: 100%; }
 
 #first-image {
-	position: relative;
+	background-image: url("images/DSC_0327_BW.jpg");
 }
 #second-image {
-	position: relative;
+	background-image: url("images/DSC_0057.jpg");
 }
 #photos {
-	position: relative;
 }
 #nav {
 	text-align: center;

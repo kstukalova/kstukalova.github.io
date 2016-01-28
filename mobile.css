@@ -332,6 +332,7 @@ section.section.parallax h1 {
 }
 section.section.parallax-1 {
   background-image: url("images/DSC_0327_BW.jpg");
+  background-size: 500px 500px;
 }
 section.section.parallax-2 {
   background-image: url("images/DSC_0057.jpg");

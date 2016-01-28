@@ -25,6 +25,15 @@ html { height: 100%; }
 #background-1 {
 	height: 100vh;
 }
+#first-image {
+	position: relative;
+}
+#second-image {
+	position: relative;
+}
+#photos {
+	position: relative;
+}
 #nav {
 	text-align: center;
 	background: #D5D5D5;

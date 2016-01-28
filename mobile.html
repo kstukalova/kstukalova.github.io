@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
 	<!-- jQuery library -->
@@ -11,293 +10,255 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 	<!-- Modern Family font -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>	
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>	
 	
 	<!-- parallax plugin -->
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="skrollr-master/src/skrollr.js"></script>
-	<script src="/js/_main.js"></script>
-
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./home.css">
-</head>
+	<link rel="stylesheet" href="./mobile.css">
+ </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar" class="loading">
+	<div class="navbar navbar-default nav-collapse navbar-fixed-top">
 
-	<div
-		class="parallax-image-wrapper parallax-image-wrapper-100"
-		data-anchor-target="#top + .gap"
-		data-bottom-top="transform:translate3d(0px, 200%, 0px)"
-		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+		<div class="container" id="nav">
 
-		<div
-			class="parallax-image parallax-image-100"
-			style="background-image:url(images/DSC_0327.jpg)"
-			data-anchor-target="#top + .gap"
-			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
-			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
-		></div>
-		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
-	</div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      	</button>
+		      	<a class="navbar-brand" href="index.html"><div id="name">Katya Stukalova</div></a>
+			</div>
 
-	<div
-		class="parallax-image-wrapper parallax-image-wrapper-100"
-		data-anchor-target="#about + .gap"
-		data-bottom-top="transform:translate3d(0px, 200%, 0px)"
-		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
-
-		<div
-			class="parallax-image parallax-image-100"
-			style="background-image:url(images/DSC_0057_large.jpg)"
-			data-anchor-target="#about + .gap"
-			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
-			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
-		></div>
-	</div>
-
-<!-- 	<div
-		class="parallax-image-wrapper parallax-image-wrapper-50"
-		data-anchor-target="#kittens + .gap"
-		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
-		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
-		<div
-			class="parallax-image parallax-image-50"
-			style="background-image:url(images/DSC_0327.jpg)"
-			data-anchor-target="#kittens + .gap"
-			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
-			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
-		></div>
-	</div> -->
-
-	<nav class="navbar navbar-default navbar-fixed-top">
-
-	<div class="container-fluid" id="nav">
-
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      	</button>
-      	<a class="navbar-brand" href="index.html"><div id="name">Katya Stukalova</div></a>
-	</div>
-
-	<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-		<ul class="nav navbar-nav">
-			<li class="active"><div id="home"><a href="#">Home <span class="sr-only">(current)</span></a></div></li>
-			<li><div id="about"><a href="#about">About</a></div></li>
-			<li><div id="photos"><a href="#photos">Photos</a></div></li>
-		</ul>
-	</div>
-	</div>
-	</nav> <!--navbar navbar-default-->
-
-	<div id="skrollr-body">
-		<div id="top"></div>
-		<div class="gap gap-100" style="background-image:url(images/DSC_0327.jpg);"></div>
-		<div class="content content-full content-about" id="about">
-			<h1 style="text-align: center">About</h1>
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li id = "home-li" class="active"><div id="home"><a href="#">Home <span class="sr-only">(current)</span></a></div></li>
+					<li id = "about-li"><div id="about"><a href="#about">About</a></div></li>
+					<li id = "photos-li"><div id="photos"><a href="#photos">Photos</a></div></li>
+				</ul>
+			</div>
 		</div>
-		<div class="gap gap-100 gap-black" style="background-image:url(images/DSC_0327.jpg);"></div>
-		<div class="content content-photos" id="done">
-			<div id="album_thumbnails">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/stanford_01_2015/stanford_01_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/stanford.jpg">
-								<div class="caption">Stanford <span class="date">|&nbsp01&#8209;2016</span></div></a>
+	</div> <!--navbar navbar-default-->
+
+	<div id="first-image">
+		<img id="background-1" src="images/DSC_0327_BW.jpg">
+	</div>
+        <div id="about-slide">
+            <div class="container" style="width:100%;">
+            			<div class="col-sm-6 col-xs-12 col-centered">
+            			<img id="me" class="img-responsive center-block"src="images/DSC_3441.jpg">
+            			</div>
+            		<div class="col-sm-6 col-xs-12 col-centered" id="about-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            		</div>
+            	</div>
+            </div>
+		<div id="second-image">
+		</div>
+		<div id="photos">
+        	<h2>Photos</h2>
+        	<div class="content content-photos" id="done">
+				<div id="album_thumbnails">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/stanford_01_2015/stanford_01_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/stanford.jpg">
+									<div class="caption">Stanford&nbsp<span class="date">|&nbsp01&#8209;2016</span></div></a>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/zoo_01_2015/zoo_01_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/zoo.jpg"></a>
+									<div class="caption">SF&nbspZoo&nbsp<span class="date">|&nbsp01&#8209;2016</span></div>
+								</div>
+							</div>
+
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/tahoe_12_2015/tahoe_12_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/tahoe.jpg"></a>
+									<div class="caption">Tahoe&nbsp<span class="date">|&nbsp12&#8209;2015</span></div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/park_12_2015/park_12_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/park.jpg"></a>
+									<div class="caption">Park&nbsp<span class="date">|&nbsp12&#8209;2015</span></div>
+								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/zoo_01_2015/zoo_01_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/zoo.jpg"></a>
-								<div class="caption">SF Zoo <span class="date">|&nbsp01&#8209;2016</span></div>
+						<div class="row">
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/hawaii_11_2015/hawaii_11_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/hawaii.jpg"></a>
+									<div class="caption">Hawaii&nbsp<span class="date">|&nbsp11&#8209;2015</span></div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/hmb_08_2015/hmb_08_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/hmb.jpg"></a>
+									<div class="caption">Half&nbspMoon&nbspBay <span class="date">|&nbsp08&#8209;2015</span></div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/sf_07_2015/sf_07_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/sf_ana_peta.jpg"></a>
+									<div class="caption">SF&nbsp<span class="date">|&nbsp07&#8209;2015</span></div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/napa_07_2015/napa_07_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/napa.jpg"></a>
+									<div class="caption">Napa&nbsp<span class="date">|&nbsp07&#8209;2015</span></div>
+								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/tahoe_12_2015/tahoe_12_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/tahoe.jpg"></a>
-								<div class="caption">Tahoe <span class="date">|&nbsp12&#8209;2015</span></div>
+						
+						<div class="row">
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/carmel_07_2015/carmel_07_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/carmel.jpg"></a>
+									<div class="caption">Carmel&nbsp<span class="date">|&nbsp07&#8209;2015</span></div>
+								</div>
 							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/park_12_2015/park_12_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/park.jpg"></a>
-								<div class="caption">Park <span class="date">|&nbsp12&#8209;2015</span></div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/ggp_07_2015/ggp_07_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/badminton.jpg"></a>
+									<div class="caption">Golden&nbspGate <span class="date">|&nbsp07&#8209;2015</span></div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/hawaii_11_2015/hawaii_11_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/hawaii.jpg"></a>
-								<div class="caption">Hawaii <span class="date">|&nbsp11&#8209;2015</span></div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/ashby_hmb_07_2015/ashby_hmb_07_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/ashby_hmb.jpg"></a>
+									<div class="caption">Ashby&nbspand&nbspHMB <span class="date">|&nbsp07&#8209;2015</span></div>
+								</div>
 							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/hmb_08_2015/hmb_08_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/hmb.jpg"></a>
-								<div class="caption">Half Moon Bay <span class="date">|&nbsp08&#8209;2015</span></div>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/sf_07_2015/sf_07_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/sf_ana_peta.jpg"></a>
-								<div class="caption">SF <span class="date">|&nbsp07&#8209;2015</span></div>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/napa_07_2015/napa_07_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/napa.jpg"></a>
-								<div class="caption">Napa <span class="date">|&nbsp07&#8209;2015</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/carmel_07_2015/carmel_07_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/carmel.jpg"></a>
-								<div class="caption">Carmel <span class="date">|&nbsp07&#8209;2015</span></div>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/ggp_07_2015/ggp_07_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/badminton.jpg"></a>
-								<div class="caption">Golden Gate <span class="date">|&nbsp07&#8209;2015</span></div>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/ashby_hmb_07_2015/ashby_hmb_07_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/ashby_hmb.jpg"></a>
-								<div class="caption">Ashby and HMB <span class="date">|&nbsp07&#8209;2015</span></div>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<div class="thumbnail">
-								<a href="pages/biking_06_2015/biking_06_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/biking.jpg"></a>
-								<div class="caption">Biking <span class="date">|&nbsp06&#8209;2015</span></div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="pages/biking_06_2015/biking_06_2015.html" style="text-decoration: none"><img src="images/album_thumbnails/biking.jpg"></a>
+									<div class="caption">Biking&nbsp<span class="date">|&nbsp06&#8209;2015</span></div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>     
-        <!-- Section 2 -->
-        <!-- Section 3 -->
-        <!-- Section 4 -->         
-	<script>
+
+
+	 <script>
+	 	//-----------------ANIMATE SCROLLING FROM NAVBAR-------------------//
 		$("#home").click(function() {
 		    $('html, body').animate({ scrollTop: 0 }, 'slow'); return false; 
 		});
 		$("#about").click(function() {
+			console.log( $("#about-slide").offset().top - 80);
 		    $('html, body').animate({
-		        scrollTop: $(".content-about").offset().top - 100
+		        scrollTop: $("#about-slide").offset().top - 80
 		    }, 500);
 		});
 		$("#photos").click(function() {
 		    $('html, body').animate({
-		        scrollTop: $(".content-photos").offset().top - 100
-		    }, 500);
+		        scrollTop: $(".content-photos").offset().top - 70
+		    }, 1000);
 		});
+
+		//-----------------HIDE NAVBAR ON SMALL SCREENS AFTER CLICK------------//
 		$(document).ready(function () {
 		  $(".navbar-nav li #about").click(function(event) {
 		    $(".navbar-collapse").collapse('hide');
 		  });
 		});
+
 		$(document).ready(function () {
 		  $(".navbar-nav li #photos").click(function(event) {
 		    $(".navbar-collapse").collapse('hide');
 		  });
 		});
+
 		$(document).ready(function () {
 		  $(".navbar-nav li #home").click(function(event) {
 		    $(".navbar-collapse").collapse('hide');
 		  });
 		});
+
+		//-----------------SCROLL TO CORRECT AREA------------
 		// jQuery(window).load(function () {
-		//     var pathname = window.location.pathname;
-		// 	if (pathname.indexOf("#about") != -1) {
+		//     var pathname = window.location.hash.substr(1);
+		// 	if (pathname == "about") {
 		// 		$('html, body').animate({
-		// 	        scrollTop: $("#content_1").offset().top - 100
+		// 	        scrollTop: $("#about-slide").offset().top - 80
 		// 	    }, 500);
 		// 	}
+
 		// });
+
+		// jQuery(document).ready(function () {
+		//     // Handler for .ready() called.
+		//     console.log($("#about-slide").offset().top - 80);
+		//     $('html, body').delay(1000).animate({
+		//         scrollTop: $("#about-slide").offset().top - 80
+		//     }, 'slow');
+		// });
+
 		
 		
-		//alert(pathname.indexOf("#about"));
-		// $('p').css('max-height',$(window).height());
-		// $('p').css('overflow','auto');
-		$(function(){
-		  // get hash value
-		  var hash = window.location.hash;
-		  // now scroll to element with that id
-		  $('html, body').animate({ scrollTop: $(hash).offset().top -100 });
-		});
-		$('p').css({
-		    overflow: 'auto',
-		    'overflow-x': 'scroll'
-		});
+		//-----------------HIGHLIGHT CORRECT NAVBAR AREA------------
 		$(window).scroll(function() {
-			var home = document.querySelector("#home");
-		    var about = document.querySelector("#about");
-		    var photos = document.querySelector("#photos");
-		   	var hT = $('#content_1').offset().top,
-		       hH = $('#content_1').outerHeight(),
+			var home = document.getElementById("home");
+		    var about = document.getElementById("about");
+		    var photos = document.getElementById("photos");
+
+		    // about slide
+		   	var hT = $('#slide-2').offset().top,
+		       hH = $('#slide-2').outerHeight(),
 		       wH = $(window).height(),
 		       wS = $(this).scrollTop();
-		   if (wS > (hT+hH-wH-550)){
-		       about.style.backgroundColor = "#e7e7e7";
-		       home.style.backgroundColor = "#D5D5D5";
-		       photos.style.backgroundColor = "#D5D5D5";
+		   if (wS > hT - 10000000){
+		       about.style.borderBottom = "3px solid #000";
+		       home.style.borderBottom = "none";
+		       photos.style.borderBottom = "none";
 		   }
-		   var hT = $('#content-photos').offset().top,
-		       hH = $('#content-photos').outerHeight();
-		   if (wS > (hT+hH-wH-150)){
-		       photos.style.backgroundColor = "#e7e7e7";
-		       home.style.backgroundColor = "#D5D5D5";
-		       about.style.backgroundColor = "#D5D5D5";
+
+		   // photos slide
+		   var hT = $('#slide-3').offset().top,
+		       hH = $('#slide-3').outerHeight();
+		   if (wS > hT - wH*.9){
+		       photos.style.borderBottom = "3px solid #000";
+		       home.style.borderBottom = "none";
+		       about.style.borderBottom = "none";
 		   }
-		   var hT = $('#wall_1').offset().top,
-		       hH = $('#wall_1').outerHeight();
-		   if (wS < wH-100){
-		       home.style.backgroundColor = "#e7e7e7";
-		       about.style.backgroundColor = "#D5D5D5";
-		       photos.style.backgroundColor = "#D5D5D5";
+
+		   // top of home page
+		   var hT = $('#slide-1').offset().top,
+		       hH = $('#slide-1').outerHeight();
+		   if (wS < wH/2){
+		       home.style.borderBottom = "3px solid #000";
+		       about.style.borderBottom = "none";
+		       photos.style.borderBottom = "none";
 		   }
 		});
-	(function(){
-		  var parallax = document.querySelectorAll(".parallax"),
-		      speed = 0.5;
-		  window.onscroll = function(){
-		    [].slice.call(parallax).forEach(function(el,i){
-		      var windowYOffset = window.pageYOffset,
-		          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
-		      el.style.backgroundPosition = elBackgrounPos;
-		    });
-		  };
-		})();
-		( function( $ ) {
-		    // Init Skrollr
-		    var s = skrollr.init({
-		        render: function(data) {
-		            //Debugging - Log the current scroll position.
-		            //console.log(data.curTop);
-		        }
-		    });
-		} )( jQuery );
-	skrollr.init({
-		smoothScrolling: false,
-		mobileDeceleration: 0.004
-	});
-	
+	</script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+
+
+
+  //   	$(window).load(function() {
+		//     // weave your magic here.
+		//     console.log($("#about-slide").offset().top - 80);
+		//     $('html, body').delay(1000).animate({
+		//         scrollTop: $("#about-slide").offset().top - 80
+		//     }, 'slow');
+		// });
 	</script>
 </body>
 
 
 
 </html>
-Status API Training Shop Blog About Pricing
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help

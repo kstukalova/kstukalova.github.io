@@ -212,7 +212,7 @@
 		}
 
 		if (mobilecheck()) {
-			window.location = "http://kstukalova.github.io/test.html";
+			window.location = "http://kstukalova.github.io/mobile.html";
 		}
 
 	 	//-----------------ANIMATE SCROLLING FROM NAVBAR-------------------//
@@ -251,23 +251,23 @@
 		});
 
 		//-----------------SCROLL TO CORRECT AREA------------
-		// jQuery(window).load(function () {
-		//     var pathname = window.location.hash.substr(1);
-		// 	if (pathname == "about") {
-		// 		$('html, body').animate({
-		// 	        scrollTop: $("#about-slide").offset().top - 80
-		// 	    }, 500);
-		// 	}
+		jQuery(window).load(function () {
+		    var pathname = window.location.hash.substr(1);
+			if (pathname == "about") {
+				$('html, body').animate({
+			        scrollTop: $("#about-slide").offset().top - 80
+			    }, 500);
+			}
 
-		// });
+		});
 
-		// jQuery(document).ready(function () {
-		//     // Handler for .ready() called.
-		//     console.log($("#about-slide").offset().top - 80);
-		//     $('html, body').delay(1000).animate({
-		//         scrollTop: $("#about-slide").offset().top - 80
-		//     }, 'slow');
-		// });
+		jQuery(document).ready(function () {
+		    // Handler for .ready() called.
+		    console.log($("#about-slide").offset().top - 80);
+		    $('html, body').delay(1000).animate({
+		        scrollTop: $("#about-slide").offset().top - 80
+		    }, 'slow');
+		});
 
 		
 		

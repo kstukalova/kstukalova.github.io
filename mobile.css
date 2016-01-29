@@ -97,11 +97,11 @@
 }
 
 @media (max-width: 768px) { 
-  	#home {
+  	#home-nav {
     	margin: auto;
     	padding-bottom: 5px;
 	}
-	#about {
+	#about-nav {
 		margin: auto;
 		padding-bottom: 5px;
     	padding-top: 5px;
@@ -134,7 +134,9 @@
 		font-size: large;
 	}
 }
-
+body {
+	background-color: #000;
+}
 h2 {
 	color: #ffffff;
 	top: 30px;

@@ -35,9 +35,10 @@
 
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><div id="home-nav"><a href="index.html" id"what">Home </a></div></li>
-                    <li id = "about-li"><div id="about-nav"><a href="#about">About</a></div></li>
-                    <li id = "photos-li"><div id="photos-nav"><a href="#photos">Photos</a></div></li>
+                <li><div id="home-nav"><a href="#home">Home </a></div></li>
+                <li id = "about-li"><div id="about-nav"><a href="#about">About</a></div></li>
+                    
+                    <li id = "photos-li"><div id="photos-nav"><a href="#pictures">Photos</a></div></li>
                 </ul>
             </div>
         </div>
@@ -164,7 +165,7 @@
 <script>
         //-----------------ANIMATE SCROLLING FROM NAVBAR-------------------//
     $("#home-nav").click(function() {
-        $('html, body').animate({ scrollTop: 0 }, 'slow'); return false; 
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
     });
     $("#about-nav").click(function() {
         console.log( $("#about-slide").offset().top - 80);
@@ -210,7 +211,7 @@
 
     jQuery(window).load(function () {
         var pathname = window.location.hash.substr(1);
-        if (pathname == "photos") {
+        if (pathname == "pictures") {
             $('html, body').animate({
                 scrollTop: $(".content-photos").offset().top - 200
             }, 500);
@@ -243,17 +244,17 @@
            about.style.borderBottom = "3px solid #000";
            home.style.borderBottom = "none";
            photos.style.borderBottom = "none";
-           window.history.pushState("object or string", "Title", "/mobile.html#about");
+           window.location.hash = "about";
        }
 
        // photos slide
        var hT = $('.content-photos').offset().top,
            hH = $('.content-photos').outerHeight();
-       if (wS > hT - wH/2 && wS < hT+hH){
+       if (wS > hT - wH/2){
            photos.style.borderBottom = "3px solid #000";
            home.style.borderBottom = "none";
            about.style.borderBottom = "none";
-           window.history.pushState("object or string", "Title", "/mobile.html#photos");
+           window.location.hash = "pictures";
        }
 
        // top of home page
@@ -263,7 +264,7 @@
            home.style.borderBottom = "3px solid #000";
            about.style.borderBottom = "none";
            photos.style.borderBottom = "none";
-           window.history.pushState("object or string", "Title", "/mobile.html#home");
+           window.location.hash = "home";
        }
     });
 </script>

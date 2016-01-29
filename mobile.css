@@ -57,7 +57,7 @@
 	padding-top: 8px;
 }
 
-#home {
+#home-nav {
 	border-bottom:3px solid #000;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -106,7 +106,7 @@
 		padding-bottom: 5px;
     	padding-top: 5px;
 	}
-	#photos {
+	#photos-nav {
 		margin: auto;
 		padding-bottom: 5px;
 		padding-top: 5px;
@@ -142,6 +142,7 @@ h2 {
 	color: white;
 	font-weight:100;
 	font-size:30pt;
+	text-align: center;
 }
 
 #me {
@@ -150,6 +151,20 @@ h2 {
     height: auto;
     vertical-align: center;
 
+}
+
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    vertical-align: middle;
 }
 
 /* CSS */
@@ -312,7 +327,6 @@ img {
 }
 
 .container_temp {
-    max-width: 960px;
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
 }

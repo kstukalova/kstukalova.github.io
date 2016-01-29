@@ -35,7 +35,7 @@
 
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li id = "home-li" class="active"><div id="home-nav"><a href="#">Home <span class="sr-only">(current)</span></a></div></li>
+                    <li><div id="home-nav"><a href="index.html" id"what">Home </a></div></li>
                     <li id = "about-li"><div id="about-nav"><a href="#about">About</a></div></li>
                     <li id = "photos-li"><div id="photos-nav"><a href="#photos">Photos</a></div></li>
                 </ul>
@@ -208,6 +208,16 @@
 
     });
 
+    jQuery(window).load(function () {
+        var pathname = window.location.hash.substr(1);
+        if (pathname == "photos") {
+            $('html, body').animate({
+                scrollTop: $(".content-photos").offset().top - 200
+            }, 500);
+        }
+
+    });
+
     // jQuery(document).ready(function () {
     //     // Handler for .ready() called.
     //     console.log($("#about-slide").offset().top - 80);
@@ -233,6 +243,7 @@
            about.style.borderBottom = "3px solid #000";
            home.style.borderBottom = "none";
            photos.style.borderBottom = "none";
+           window.history.pushState("object or string", "Title", "/#home");
        }
 
        // photos slide

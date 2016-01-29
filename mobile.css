@@ -295,6 +295,7 @@ img {
 .container_temp {
     max-width: 960px;
     margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
 }
 section.section:last-child {
   margin-bottom: 0;
@@ -313,6 +314,7 @@ section.section p:last-child {
 }
 section.section.content {
   padding: 40px 0;
+  background-color: #000;
 }
 section.section.parallax {
   height: 800px;

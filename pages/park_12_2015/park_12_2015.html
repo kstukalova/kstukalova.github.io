@@ -27,6 +27,12 @@
 	<script src="../../gallery/dist/photoswipe-ui-default.min.js"></script> 
 
 	<link rel="stylesheet" href="../pages.css">
+	<style>
+		section.section.parallax-2 {
+		  background-image: url("../covers/park.jpg");
+		  background-attachment: scroll;
+		}
+	</style>
 </head>
 
 <body>
@@ -54,7 +60,12 @@
 		</div>
 	</div> <!--navbar navbar-default-->
 
-	<p id="title">Park &nbsp;<span class="date">|&nbsp&nbsp07&#8209;2015</span></p>
+	<section class="section parallax parallax-2">
+	  <div class="container_temp">
+	  	<div id="hide"></div>
+	  	<h2 id="title">Park &nbsp;<span class="date">|&nbsp;&nbsp;07&#8209;2015</span></h2>
+	  </div>
+	</section>
 
 	<!-- Gallery display -->
 	<div id="gallery">

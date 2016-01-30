@@ -282,7 +282,7 @@
 		       hH = $('#slide-2').outerHeight(),
 		       wH = $(window).height(),
 		       wS = $(this).scrollTop();
-		   if (wS > hT - 10000000){
+		   if (wS > hT - 10000000 && wS < hT + hH){
 		       about.style.borderBottom = "3px solid #000";
 		       home.style.borderBottom = "none";
 		       photos.style.borderBottom = "none";

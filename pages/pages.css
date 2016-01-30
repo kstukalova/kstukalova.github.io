@@ -46,8 +46,8 @@ h2 {
 	font-weight:100;
 	font-size:30pt;
 	color: white;
-/*	padding-top: 60px;
-*/	z-index: 2;
+	z-index: 2;
+	/* for vertical and horizontal centering */
 	position: absolute;
 	top: 40%;
 	left: 50%;

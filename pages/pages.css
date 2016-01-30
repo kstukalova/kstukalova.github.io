@@ -8,7 +8,7 @@ body {
 }
 
 section.section.parallax {
-  height: 300px;
+  height: 150px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,7 +24,7 @@ section.section.parallax-2 {
 }
 #hide {
 	background-color: #000;
-	height: 300px;
+	height: 150px;
 	width: 100%;
 	opacity: 0.8;
 	position: absolute;
@@ -50,7 +50,7 @@ h2 {
 	font-weight:100;
 	font-size:30pt;
 	color: white;
-	padding-top: 140px;
+	padding-top: 60px;
 	z-index: 2;
 	position: relative;
 }
@@ -165,7 +165,7 @@ h2 {
 }
 
 #gallery {
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 #gallery .col-xs-4 {

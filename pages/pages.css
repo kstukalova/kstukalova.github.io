@@ -13,6 +13,7 @@ section.section.parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
 }
 
 .image-container {
@@ -42,13 +43,16 @@ h2 {
 }
 
 #title {
-	text-align: center;
 	font-weight:100;
 	font-size:30pt;
 	color: white;
-	padding-top: 60px;
-	z-index: 2;
-	position: relative;
+/*	padding-top: 60px;
+*/	z-index: 2;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -60%);
 }
 
 .date {

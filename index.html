@@ -302,7 +302,7 @@
 		   // top of home page
 		   var hT = $('#slide-1').offset().top,
 		       hH = $('#slide-1').outerHeight();
-		   if (wS < wH/2){
+		   if (wS < wH/2 && wS > 0){
 		       home.style.borderBottom = "3px solid #000";
 		       about.style.borderBottom = "none";
 		       photos.style.borderBottom = "none";
@@ -313,18 +313,6 @@
     <script src="js/imagesloaded.js"></script>
     <script src="js/skrollr.js"></script>
     <script src="js/index.js"></script>
-    <script>
-
-
-
-  //   	$(window).load(function() {
-		//     // weave your magic here.
-		//     console.log($("#about-slide").offset().top - 80);
-		//     $('html, body').delay(1000).animate({
-		//         scrollTop: $("#about-slide").offset().top - 80
-		//     }, 'slow');
-		// });
-	</script>
 </body>
 
 

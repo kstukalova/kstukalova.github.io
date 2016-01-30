@@ -15,10 +15,6 @@ section.section.parallax {
   background-size: cover;
 }
 
-section.section.parallax-2 {
-  background-image: url("covers/tahoe.jpg");
-  background-attachment: scroll;
-}
 .image-container {
 	position: relative;
 }

@@ -155,10 +155,10 @@ h2 {
 .hsContent p {
 	color: #b2b2b2;
 }
-.hsContent a {
+/*.hsContent a {
 	color: #b2b2b2;
 	text-decoration: underline;
-}
+}*/
 .bgBlack {
 	background-color: rgba(0,0,0,0.75);
 	padding: 3px 10px;
@@ -278,4 +278,9 @@ img {
     box-shadow:0;
     border-radius:0;
     background-color: transparent;
+}
+
+a, a:hover {
+	color: #ffa07a;
+	text-decoration: none;
 }

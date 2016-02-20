@@ -305,10 +305,11 @@ h2 {
 #skrollr-body {
 	overflow-x: hidden;
 }*/
-.hsContent a {
-	color: #b2b2b2;
-	text-decoration: underline;
+a, a:hover {
+	color: #ffa07a;
+	text-decoration: none;
 }
+
 #album_thumbnails .caption {
 	color: white;
 	font-family: 'Raleway', sans-serif;

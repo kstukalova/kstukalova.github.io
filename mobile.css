@@ -203,6 +203,7 @@ h2 {
 .hsContent p {
 	color: #b2b2b2;
 }
+
 .hsContent a {
 	color: #b2b2b2;
 	text-decoration: underline;
@@ -304,6 +305,10 @@ h2 {
 #skrollr-body {
 	overflow-x: hidden;
 }*/
+.hsContent a {
+	color: #b2b2b2;
+	text-decoration: underline;
+}
 #album_thumbnails .caption {
 	color: white;
 	font-family: 'Raleway', sans-serif;

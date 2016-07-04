@@ -255,17 +255,18 @@ albumThumnailPart5 = "</span></div></a>\n\
 # generateWebpage(test)
 # updateIndexMobile(test)
 # writeFigures(test)
-generateWebpage("biking_06_2015") #biking
-generateWebpage("ashby-hmb_07_2015") # ashby and hmb
-generateWebpage("ggp_07_2015") # ggp
-generateWebpage("carmel_07_2015") # carmel
-generateWebpage("napa_07_2015") # napa
-generateWebpage("sf_07_2015") # sf (07)
-generateWebpage("hmb_08_2015") # hmb (08)
-generateWebpage("hawaii_11_2015") # hawaii
-generateWebpage("park_12_2015") # park
-generateWebpage("tahoe_12_2015") # tahoe
-generateWebpage("zoo_01_2015") # sf zoo
-generateWebpage("stanford_01_2015") # stanford
-generateWebpage("sf_02_2016") # sf (02)
-generateWebpage("sf_05_2016") # sf(05)
+# generateWebpage("biking_06_2015") #biking
+# generateWebpage("ashby-hmb_07_2015") # ashby and hmb
+# generateWebpage("ggp_07_2015") # ggp
+# generateWebpage("carmel_07_2015") # carmel
+# generateWebpage("napa_07_2015") # napa
+# generateWebpage("sf_07_2015") # sf (07)
+# generateWebpage("hmb_08_2015") # hmb (08)
+# generateWebpage("hawaii_11_2015") # hawaii
+# generateWebpage("park_12_2015") # park
+# generateWebpage("tahoe_12_2015") # tahoe
+# generateWebpage("zoo_01_2015") # sf zoo
+# generateWebpage("stanford_01_2015") # stanford
+# generateWebpage("sf_02_2016") # sf (02)
+# generateWebpage("sf_05_2016") # sf(05)
+generateWebpage("switzerland_07_2016")

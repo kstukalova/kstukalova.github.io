@@ -22,7 +22,7 @@ def generateWebpage(folderTitle):
 # word is format: name_month_year
 def getName(word):
 	firstUnderscore = word.find("_")
-	word = word.replace("-", " ", len(word))
+	word = word.replace("-", "&nbsp;", len(word))
 	if firstUnderscore == -1:
 		return -1
 	return word[:firstUnderscore]
@@ -93,7 +93,7 @@ def updateIndex(folderTitle):
 			
 			albumThumbnail = albumThumnailPart1 + "\"html/" + folderTitle + ".html\""
 			albumThumbnail += albumThumnailPart2 + "\"album_thumbnails/" + folderTitle + ".jpg\""
-			albumThumbnail += albumThumnailPart3 + getName(folderTitle) + " "
+			albumThumbnail += albumThumnailPart3 + getName(folderTitle) + "&nbsp;"
 			albumThumbnail += albumThumnailPart4 + "|&nbsp;" + str(getMonth(folderTitle)) + "&#8209;" + str(getYear(folderTitle))
 			albumThumbnail += albumThumnailPart5
 			line = line.replace(line, line+albumThumbnail)
@@ -269,4 +269,8 @@ albumThumnailPart5 = "</span></div></a>\n\
 # generateWebpage("stanford_01_2015") # stanford
 # generateWebpage("sf_02_2016") # sf (02)
 # generateWebpage("sf_05_2016") # sf(05)
-generateWebpage("switzerland_07_2016")
+generateWebpage("switzerland-day-2_07_2016")
+
+
+
+

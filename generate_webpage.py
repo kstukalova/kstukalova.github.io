@@ -97,7 +97,7 @@ def updateIndex(folderTitle):
 			albumThumbnail += albumThumnailPart4 + "|&nbsp;" + str(getMonth(folderTitle)) + "&#8209;" + str(getYear(folderTitle))
 			albumThumbnail += albumThumnailPart5
 			line = line.replace(line, line+albumThumbnail)
-		print(line),
+		print(line, end='')
 	line = line.replace(line, line+"hello")
 
 def updateMobile(folderTitle):
@@ -109,7 +109,7 @@ def updateMobile(folderTitle):
 			albumThumbnail += albumThumnailPart4 + "|&nbsp;" + str(getMonth(folderTitle)) + "&#8209;" + str(getYear(folderTitle))
 			albumThumbnail += albumThumnailPart5
 			line = line.replace(line, line+albumThumbnail)
-		print(line),
+		print(line, end='')
 	line = line.replace(line, line+"hello")
 
 import struct
@@ -269,7 +269,13 @@ albumThumnailPart5 = "</span></div></a>\n\
 # generateWebpage("stanford_01_2015") # stanford
 # generateWebpage("sf_02_2016") # sf (02)
 # generateWebpage("sf_05_2016") # sf(05)
+generateWebpage("switzerland-day-1_07_2016")
 generateWebpage("switzerland-day-2_07_2016")
+generateWebpage("switzerland-day-3_07_2016")
+generateWebpage("switzerland-day-4_07_2016")
+generateWebpage("switzerland-day-5_07_2016")
+generateWebpage("switzerland-day-6_07_2016")
+generateWebpage("switzerland-day-7_07_2016")
 
 
 

@@ -1,0 +1,7 @@
+def adder(x):
+	def add(y):
+		nonlocal x, y
+		x += y
+		return x
+	return add
+adder(2)(3)

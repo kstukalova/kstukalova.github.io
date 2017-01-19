@@ -47,6 +47,20 @@
 			word-spacing: 30px;
 			display: inline-block;
 		}
+		#root {
+			position: fixed;
+	        width: 100%;
+	        height: 100%;
+		}
+		#root > iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
+    	}
+    	.nav {
+    		margin-top: -20px;
+    	}
 	</style>
  </head>
 
@@ -64,14 +78,16 @@
 			</div>
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li id = "home-li" class="active"><div id="home"><a href="#home">Home <span class="sr-only">(current)</span></a></div></li>
+					<li id = "home-li" class="active"><div id="photos"><a href="index.html">Home <span class="sr-only">(current)</span></a></div></li>
 					<li id = "about-li"><div id="about"><a href="#about">About</a></div></li>
 					<li id = "photos-li"><div id="photos"><a href="#photos">Photos</a></div></li>
-					<li id = "photos-li"><div id="photos"><a href="resources.html">Resources</a></div></li>
+					<li id = "photos-li"><div id="home"><a href="resources.html">Src</a></div></li>
+					<li id = "photos-li"><div id="photos"><a href="attendance.html">Attn</a></div></li>
 				</ul>
 			</div>
 		</div>
 	</div> <!--navbar navbar-default-->
+
 	<div id="list-links">
 		<ul>
 			<!-- <li> Discussion 01 - Environment Diagrams and HOF: 
